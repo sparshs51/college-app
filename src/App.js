@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Card from './cardUI/card.js';
+import Card from './Components/card.js';
 import CollegeList from './colleges.json';
 
 class App extends Component {
@@ -43,10 +43,9 @@ class App extends Component {
   };
 
   handleScroll = () => { 
-    var lastLi = document.querySelector("ul.container > li:last-child");
-    var lastLiOffset = lastLi.offsetTop + lastLi.clientHeight;
-    var pageOffset = window.pageYOffset + window.innerHeight;
-    if (pageOffset > lastLiOffset) {
+    var pageOffset = window.pageYOffset;
+    var remaining = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (pageOffset >= remaining) {
           this.loadMore();
         }
   };
@@ -55,11 +54,11 @@ class App extends Component {
     const { data } = this.state;
     return(
       <div>
-        <ul className='container'>
+        <ul className='container college-list'>
         {
           data.map((collegeDetail, index) => (
             <li key ={index}>
-              <Card collegeName = {collegeDetail.college_name} />
+              <Card collegeDetails = {collegeDetail}/>
             </li>
           ))
         }

@@ -1,5 +1,8 @@
+*{
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
+  margin: 49px 51px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +10,397 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: DINPro;
+  src: local(DINPro-Medium-500),
+    url(/src/DIN_Pro/DIN\ Pro\ Medium\ 500.otf) format("otf");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: DINPro;
+  src: local(DINPro-Bold),
+    url(/src/DIN_Pro/DIN\ Pro\ Bold\ 700.otf) format("otf");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Myriad Pro;
+  src: local(Myriad Pro Regular),
+    url(/path/to/Myriad Pro Regular.woff2) format("woff2"),
+    url(/path/to/Myriad Pro Regular.woff) format("woff"),
+    url(/path/to/Myriad Pro Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+.Text-Style {
+  font-family: DINPro;
+  font-size: 18.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  color: #444444;
+}
+.Text-Sty {
+  font-family: DINPro;
+  font-size: 18.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.Text-Style-2 {
+  font-family: DINPro;
+  font-size: 18.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  color: #444444;
+}
+.Text-Style-3 {
+  font-family: DINPro;
+  font-size: 13.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.Text-Style-5 {
+  font-family: DINPro;
+  font-size: 13.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--greeny-blue);
+}
+.Text-Style-6 {
+  font-family: DINPro;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.Text-Style-4 {
+  font-family: DINPro;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  color: #444444;
+}
+.Text-Style-7 {
+  font-family: DINPro;
+  font-size: 13.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #444444;
+}
+.Text-Style-8 {
+  font-family: Myriad Pro;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  color: #444444;
+}
+.Text-Style-9 {
+  font-family: DINPro;
+  font-size: 28.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.89;
+  letter-spacing: normal;
+  color: #dd1c26;
+}
+.Text-Style-10 {
+  font-family: DINPro;
+  font-size: 13.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #4bb89e;
+}
+.Text-Style-11 {
+  font-family: DINPro;
+  font-size: 13.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #37b396;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.m-0{
+  margin: 0;
+}
+.page-heading{
+  margin-top: 0;
+  margin-bottom: 68px;
+  font-size: 18.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
+.college-list{
+  list-style: none;
+  padding: 0;
+}
+.custom-card{
+  margin: auto;
+  float: left;
+  width: 639px;
+  height: 377px;
+  border-radius: 3.8px;
+  box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+  border: solid 0.2px #dddddd;
+  background-color: #ffffff;
+  margin-bottom: 75px;
+}
+.custom-card img{
+  height: 233.2px;
+  width: 100%;
+}
+.custom-card .card-head{
+  height: 233.2px;
+  position: relative;
+}
+.overlay{
+  top: 0;
+  background: #0000009f;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.card-body{
+  padding: 18px 16px 0px 18px;
+  position: relative;
+}
+.card-footer{
+  padding-right: 16px;
+  position: relative;
+  margin: 0;
+}
+.card-body-left{
+  width: 70%;
+  display: inline-block;
+}
+.card-body-right{
+  float: right;
+  width: 30%;
+  text-align: right;
+  display: inline-block;
+}
+.ranking-text{
+  color: #ffffff;
+  text-align: right;
+}
+.overlay-footer{
+  font-size: 13.5px;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  padding-left: 14.3px;
+  padding-right: 14.3px;
+}
+.tag-container, .ranking-container{
+  display: inline-block;
+  margin: auto;
+  position: relative;
+}
+.ranking-container{
+  margin-left: 108px;
+}
+.rating-container{
+  position: absolute;
+  top: 29px;
+  right: 14px;
+  background: #f5a626;
+  text-align: center;
+  padding: 4px;
+  width: 75px;
+  height: 53px;
+  border-radius: 3.8px;
+}
+.tag-container .tag:nth-child(odd){
+  margin-right: 7px;
+}
+.tag{
+  width: fit-content;
+  padding: 10px 15px;
+  margin: auto;
+  display: inline-block;
+  border-radius: 16.5px;
+  background-color: #ffffff;
+}
+.card-body .card-title{
+  font-family: DINPro;
+  font-size: 18.5px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  color: #444444;
+}
+.college-list li:nth-child(even) .custom-card{
+  margin-left: 60px;
+}
+.flag-container{
+  position: absolute;
+  right: 0;
+  top: -17px;
+}
+.flag {
+  width: 154px;
+  z-index: 1;
+  height: 33px;
+  margin: 0 auto;
+  padding: 11px 31px 11px 48px;
+  position: relative; 
+  background: transparent;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.flag span{
+  z-index: 2;
+}
+.flag:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 140px solid #68a7ff;
+  border-top: 17px solid #68a7ff;
+  border-bottom: 17px solid #68a7ff;
+}
+.nearest-place:nth-child(1){
+  font-weight: bold;
+  position: relative;
+  margin-right: 12px;
+}
+.location-details{
+  margin: 9px 0;
+}
+.nearest-place:nth-child(1):after {
+  content: '';
+  position: absolute;
+  width: 1.5px;
+  height: 12px;
+  top: 0;
+  bottom: 0;
+  right: -7px;
+  background: #444444;
+}
+.distance-details{
+  margin: 6px 0px;
+}
+.original-fees{
+  position: relative;
+}
+.original-fees:after{
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #44444460;
+  top: 40%;
+  left: 0;
+  position: absolute;
+  display: flex;
+}
+.discount{
+  color: #fff;
+  font-weight: bold;
+  width: 20px;
+  height: 14px;
+  padding: 1px 3px;
+  background: #dd1c26;
+  position: relative;
+  margin-left: 15px;
+}
+.discount:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 10px solid #dd1c26;
+  border-top: 8px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+.discount:after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  background: #fff;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+.offer{
+  padding: 11px 19px;
+  width: 360px;
+  display: inline-block;
+  background: #ccf5e7;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.amenties{
+  display: inline-block;
+  float: right;
+}
+.amenty{
+  margin-left: 18px;
+  position: relative;
+}
+.amenty:nth-child(2)::after{
+  content: '';
+  position: absolute;
+  width: 4px;
+  top: 40%;
+  left: -10px;
+  height: 4px;
+  border-radius: 50%;
+  background: #37b396;
 }
